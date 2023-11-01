@@ -1,137 +1,153 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* header{
     background-color: rgb(49, 49, 49);
 } */
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 10px;
 }
-nav .logo a{
+
+nav .logo a {
     font-weight: bold;
-text-transform: uppercase;
+    text-transform: uppercase;
     position: relative;
     margin: 10px 0px 0px 10px;
     font-size: 3rem;
     text-decoration: none;
-   
+
 }
 
-nav ul{
+nav ul {
     display: flex;
     /* margin: 20px; */
-list-style: none;
+    list-style: none;
 }
-nav ul li a{
-    letter-spacing:1px;
+
+nav ul li a {
+    letter-spacing: 1px;
     text-transform: capitalize;
     font-weight: bold;
     text-decoration: none;
-    padding:  0px 25px ;
+    padding: 0px 25px;
     font-size: 1.1rem;
     color: rgb(22, 22, 22);
 }
-nav ul li a:hover{
-   border: 2px solid black;
+
+nav ul li a:hover {
+    border: 2px solid black;
     padding: 6px 20px;
     border-radius: 50px;
     background-color: rgb(143, 82, 201);
     color: white;
 }
-.menu{
+
+.menu {
     display: none;
     cursor: pointer;
 }
-.menu-icon{
+
+.menu-icon {
     height: 4px;
     width: 30px;
     border: 1px solid rgb(6, 6, 6);
     content: "";
-   margin: 5.5px;
-   background-color: rgb(11, 11, 11);
-   border-radius: 50px;  
+    margin: 5.5px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 50px;
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
-.carousel-item img{
+
+.carousel-item img {
     height: 70vh;
-    }
+}
+.slider-item{
+    position:absolute;
+    color: whitesmoke;
+    text-align: center;
+    left: 180px;
+    top: 120px;
+}
 
-    .slider-item{
-        position:absolute;
-        color: whitesmoke;
-        text-align: center;
-        left: 180px;
-        top: 120px;
-    }
 
-    .item1{
-        font-size: 50px;
-        font-weight: bold;
-    }
-    .item2{
-        font-weight: bold;
-font-size: 60px;
-    }
-    .item3{
-        font-weight: bold;
-        font-size: 40px;
-    }
 
-.img-item{
+.item1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.item2 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.item3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.img-item {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 97%;
     margin-bottom: 4%;
 }
-.img-all{
 
-    margin-top: 3% ;
+.img-all {
+
+    margin-top: 3%;
     padding: 0.6%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     width: 45%;
-    
+
 }
-.img-all .img1 img{
+
+.img-all .img1 img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  width:99.9%;
-  margin-right: 1.2%;
-  margin-top:0.2%;
-  margin-bottom:1.8%;
+    width: 99.9%;
+    margin-right: 1.2%;
+    margin-top: 0.2%;
+    margin-bottom: 1.8%;
 }
-.img-all .img2 img{
+
+.img-all .img2 img {
     display: flex;
     flex-direction: column;
     width: 100%;
-  margin: 0.5% ;
+    margin: 0.5%;
 }
-.text{
+
+.text {
     margin-top: 2%;
     padding: 2%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 45%;
 }
-p{
+
+p {
     display: flex;
     flex-wrap: wrap;
 }
 
-.cards{
+.cards {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 280px;
+    width: 282px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,19 +156,27 @@ p{
     margin: 20px;
     padding: 15px;
 }
-.cards img{
+.cards:hover{
+    box-shadow:rgb(0, 123, 255)0px 7px 29px 0px ;
+    /* transition: 1s; */
+    /* border: 2px solid #007bff; */
+}
+
+.cards img {
     width: 100px;
     height: 100px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 1px solid rgb(8, 8, 8);
     border-radius: 100px;
 }
-.card-all{
+
+.card-all {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.brand-items{
+
+.brand-items {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 150px;
     height: 200px;
@@ -163,41 +187,49 @@ p{
     text-align: center;
     margin: 20px;
     padding: 15px;
-} 
-
-.brand{
+}
+.brand-items:hover{
+    box-shadow:rgb(0, 123, 255)0px 7px 29px 0px ;
+    /* transition: 1s; */
+    /* border: 2px solid #007bff; */
+}.brand {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 5%;
 }
-.brand-items img{
+
+.brand-items img {
     width: 100px;
     height: 100px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 100px;
 }
-.cnatocets{
+
+.cnatocets {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 95%;
     display: flex;
-margin: 5% auto;
-padding: 2%;
+    margin: 5% auto;
+    padding: 2%;
 }
 
-.cnatocets .con-img{
+.cnatocets .con-img {
     width: 50%;
     margin: 2%;
 }
-.cnatocets .con-img img{
+
+.cnatocets .con-img img {
     width: 100%;
 }
-form{
+
+form {
     width: 50%;
     margin: 2%;
 }
-.icon{
+
+.icon {
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -214,10 +246,12 @@ form{
     bottom: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-i{
+
+i {
     color: black;
 }
-.end{
+
+.end {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: rgb(175, 175, 175);
     width: 100%;
@@ -229,7 +263,8 @@ i{
     text-align: center;
     font-weight: bold;
 }
-.end .icon-list i{
+
+.end .icon-list i {
     font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -239,97 +274,112 @@ i{
 
 
 /* ----------------------------------------------------------------------- */
-@media all and (max-width:750px){
-    nav{
+@media all and (max-width:750px) {
+    nav {
         display: flex;
-       flex-direction: column; 
+        flex-direction: column;
     }
-    nav ul{
+
+    nav ul {
         display: none;
     }
 
-    nav ul li{
+    nav ul li {
         text-align: center;
         margin: 30px 0px;
     }
- 
-  .logo{
-    margin: 10px 0px 0px 20px;
-    align-self: flex-start;
-  }
-  .menu{
-    display: block;
-    position: absolute;
-    top:30px;
-    right:5px;
-  }
-  nav ul li a:hover{
-    border: 2px solid rgb(18, 18, 18);
-    padding: 5px 100px;
-    border-radius: 50px;
-    background-color: rgb(143, 82, 201);
-}
-.showmenu{
-display: block;
-}
-.carousel-item img{
-    height: 50vh;
+
+    .logo {
+        margin: 10px 0px 0px 20px;
+        align-self: flex-start;
     }
-    .slider-item{
-        left: 85px;
-       
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 5px;
     }
-    .item1{
+
+    nav ul li a:hover {
+        border: 2px solid rgb(18, 18, 18);
+        padding: 5px 100px;
+        border-radius: 50px;
+        background-color: rgb(143, 82, 201);
+    }
+
+    .showmenu {
+        display: block;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .slider-item {
+        left: 30px;
+        top: 75px;
+    }
+
+    .item1 {
         font-size: 30px;
         font-weight: bold;
     }
-    .item2{
+
+    .item2 {
         font-weight: bold;
-font-size: 40px;
+        font-size: 40px;
     }
-    .item3{
+
+    .item3 {
         font-weight: bold;
         font-size: 25px;
     }
-    .img-item{
+
+    .img-item {
         display: block;
     }
-    .text{
+
+    .text {
         width: 95%;
         margin: 6% auto;
     }
-    .img-all{
+
+    .img-all {
         display: flex;
         margin: 6% auto;
         width: 95%;
         /* height:250px; */
     }
 
-    .brand-items{
-       
+    .brand-items {
+
         width: 120px;
         height: 150px;
-    } 
-    
-    .brand-items img{
+    }
+
+    .brand-items img {
         width: 50px;
         height: 50px;
         border-radius: 50px;
     }
-    .cnatocets{
+
+    .cnatocets {
         width: 100%;
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-padding: 2%;
+        padding: 2%;
     }
-    form{
+
+    form {
         width: 90%;
         margin: 2%;
     }
-    .cnatocets .con-img{
+
+    .cnatocets .con-img {
         width: 70%;
         margin: 2%;
     }
