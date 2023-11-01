@@ -77,8 +77,10 @@ nav ul li a:hover {
     position:absolute;
     color: whitesmoke;
     text-align: center;
-    left: 180px;
-    top: 120px;
+   top: 75px;
+   left: 200px;
+   
+    
 }
 
 
@@ -290,7 +292,7 @@ i {
     }
 
     .logo {
-        margin: 10px 0px 0px 20px;
+        
         align-self: flex-start;
     }
 
@@ -317,13 +319,18 @@ i {
     }
 
     .slider-item {
-        left: 30px;
-        top: 75px;
+       top: 75px;
+       left: 27%;
+       text-align: center;
     }
 
     .item1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 30px;
         font-weight: bold;
+      
     }
 
     .item2 {
@@ -383,5 +390,28 @@ i {
         width: 70%;
         margin: 2%;
     }
+}
+
+@media all and (max-width:400px) {
+
+    .one{
+        position: absolute;
+        top: 80px;
+        left: 3%;
+        text-align: center;
+     }
+     .two{
+        position: absolute;
+        top: 80px;
+        left: 3%;
+        text-align: center;
+     }
+
+     .three{
+        position: absolute;
+        top: 100px;
+        left: 12%;
+        text-align: center;
+     }
 }
 
